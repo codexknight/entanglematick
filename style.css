@@ -1,0 +1,209 @@
+/* Basic Reset & Dark Theme */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    color: #ffffff; /* White headings */
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0.1em;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #00bfff; /* Deep sky blue accent */
+    padding-bottom: 0.3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #00bfff; /* Feature title accent color */
+    margin-top: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #1e90ff; /* Dodger blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to bottom, #2a2a2a, #1a1a1a); /* Subtle gradient */
+    padding: 40px 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #b0b0b0; /* Lighter gray */
+    margin-bottom: 1.5em;
+}
+
+.version-info {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 5px;
+}
+
+.security-note {
+    font-size: 0.9em;
+    color: #ffa500; /* Orange for warning/note */
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.security-note i {
+    margin-right: 5px;
+}
+
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: #00bfff; /* Deep sky blue */
+    color: #ffffff; /* White text */
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #1e90ff; /* Dodger blue on hover */
+    text-decoration: none;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.cta-button i { /* Style for icon inside button */
+    margin-right: 8px;
+}
+
+
+/* Features Section */
+#features {
+    padding: 30px 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 25px; /* Space between grid items */
+}
+
+.feature-item {
+    background-color: #282828; /* Slightly lighter dark shade for cards */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #383838;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feature-item .icon {
+    font-size: 2em;
+    color: #00bfff; /* Accent color for icons */
+    margin-bottom: 15px;
+    display: block; /* Make icon take full width */
+    text-align: center; /* Center icon */
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    text-align: center; /* Center feature title */
+}
+.feature-item p {
+    font-size: 0.95em;
+    color: #c0c0c0; /* Slightly lighter text for feature descriptions */
+    text-align: center; /* Center feature text */
+}
+
+
+/* Summary Section */
+#summary {
+    background-color: #222; /* Slightly different dark background */
+    padding: 30px 0;
+    text-align: center;
+}
+#summary p {
+     max-width: 800px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+/* Final Download Section */
+#download-final {
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #111; /* Darkest background */
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #aaa;
+}
+footer a:hover {
+    color: #00bfff;
+}
+
+/* Responsive Adjustments (Optional but Recommended) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .feature-grid {
+        grid-template-columns: 1fr; /* Stack features on smaller screens */
+    }
+    .container {
+        padding: 15px;
+    }
+}

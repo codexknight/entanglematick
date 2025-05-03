@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entanglematick - Advanced NinjaTrader Trade Copier</title>
+    <meta name="description" content="Entanglematick: Flexible NinjaTrader add-on for copying trades with quantity ratios, paired trading (instrument/direction), and sync across multiple accounts.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: Add Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <!-- Optional: Add Logo Here -->
+            <!-- <img src="images/logo.png" alt="Entanglematick Logo" class="logo"> -->
+            <h1>Entanglematick</h1>
+            <p class="tagline">Sophisticated Trade Copying for NinjaTrader</p>
+            <a href="downloads/Entanglematick.dll" class="cta-button" download>
+                <i class="fas fa-download"></i> Download Entanglematick DLL
+            </a>
+            <p class="version-info">(Requires NinjaTrader 8+)</p>
+             <p class="security-note">
+                <i class="fas fa-shield-alt"></i> Note: Your browser/PC might warn about downloading DLLs. Verify the source (this page!) before use. Consider scanning with antivirus software.
+            </p>
+        </div>
+    </header>
+
+    <section id="features">
+        <div class="container">
+            <h2>Core Features</h2>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-user-check icon"></i>
+                    <h3>Master & Slave Account Selection</h3>
+                    <p>Select any connected, non-sim/playback account as Master. Individually check multiple Slave accounts to receive copied trades.</p>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fas fa-copy icon"></i>
+                    <h3>Initial Order Replication</h3>
+                    <p>New Master orders (Limit, Stop, etc.) are automatically copied to selected Slaves (only when "Pair Accounts" is OFF).</p>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fas fa-balance-scale icon"></i>
+                    <h3>Quantity Ratio per Slave</h3>
+                    <p>Assign a unique quantity Ratio to each Slave. Copied quantity = Master quantity * Ratio (e.g., Master=1, Ratio=3 -> Slave=3).</p>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fas fa-link icon"></i>
+                    <h3>Paired Trading Mode (Optional)</h3>
+                    <p>Toggle ON/OFF. When ON, initial orders aren't copied. Instead, Master Fills trigger new Market Orders on Slaves.</p>
+                </div>
+
+                 <div class="feature-item">
+                    <i class="fas fa-cogs icon"></i>
+                    <h3>Pair Configuration per Slave</h3>
+                    <p>When Paired Mode is ON: Specify the exact Instrument for each Slave. Choose if the Slave order direction is Same (↑↑) or Opposite (↑↓) to the Master fill.</p>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fas fa-edit icon"></i>
+                    <h3>Order Modification Sync</h3>
+                    <p>Changes to Master order Limit Price or Stop Price automatically update corresponding working Slave orders.</p>
+                </div>
+
+                 <div class="feature-item">
+                    <i class="fas fa-times-circle icon"></i>
+                    <h3>Order Cancellation Sync</h3>
+                    <p>Cancelling a working Master order automatically sends cancellation requests for corresponding Slave orders.</p>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fas fa-sync-alt icon"></i>
+                    <h3>Dynamic UI</h3>
+                    <p>Slave list updates dynamically. Pair controls enable/disable with Pair Mode. Visual indicators for Master & Pair status.</p>
+                </div>
+
+                 <div class="feature-item">
+                    <i class="fas fa-power-off icon"></i>
+                    <h3>Session-Based Configuration</h3>
+                    <p>Settings are configured manually each session and *not* saved between restarts. Ensures a clean setup every time, preventing accidental trades from old settings.</p>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt icon"></i>
+                    <h3>Robust Internal Handling</h3>
+                    <p>Uses thread-safe mechanisms and internal cleanup logic for stability and efficient order tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="summary">
+         <div class="container">
+            <h2>In Summary</h2>
+            <p>Entanglematick provides a flexible solution for traders needing to copy trades differentially across accounts, allowing variations in quantity, instrument (via pairing), and direction for sophisticated multi-account strategies within NinjaTrader.</p>
+         </div>
+    </section>
+
+     <section id="download-final">
+         <div class="container">
+             <h2>Get Entanglematick</h2>
+              <a href="downloads/Entanglematick.dll" class="cta-button" download>
+                <i class="fas fa-download"></i> Download Entanglematick Add-on (DLL)
+             </a>
+              <p class="security-note">
+                Remember to place the downloaded `.dll` file into your `Documents\NinjaTrader 8\bin\Custom` folder and restart NinjaTrader. You may need to unblock the file in its properties first.
+            </p>
+         </div>
+     </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Entanglematick. All rights reserved. | <a href="https://github.com/yourusername/entanglematick-website" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+            <p>Disclaimer: Trading involves risk. Ensure you understand how this tool works before using it with live accounts.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
